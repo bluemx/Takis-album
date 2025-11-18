@@ -236,7 +236,7 @@ export const apiService = {
       
       // For demo mode, randomly select 5 cards from user's owned cards
       // Get unique card identifiers from owned cards
-      const uniqueIdentifiers = [...new Set(demoState.ownedCards.map(c => c.identifier))]
+      const uniqueIdentifiers = [...new Set(demoState.ownedCards.map(c => c.identifier).filter((id): id is string => !!id))]
       
       // Randomly select 5 identifiers (can repeat)
       const selectedIdentifiers: string[] = []
