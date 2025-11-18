@@ -54,7 +54,7 @@ import { ref } from 'vue'
 import { Icon } from '@iconify/vue'
 import RepetidasWidget from './RepetidasWidget.vue'
 import FriendsWidget from './FriendsWidget.vue'
-import ExchangeWidget from './ExchangeWidget.vue'
+// import ExchangeWidget from './ExchangeWidget.vue'
 import PackOpener from './PackOpener.vue'
 import AlbumIndex from './AlbumIndex.vue'
 

@@ -118,27 +118,28 @@ function getInitials(name: string): string {
   return '?'
 }
 
-function getStatusIcon(statusId: number): string {
-  switch (statusId) {
-    case 2: // Gift
-      return 'mdi:gift'
-    case 3: // Exchange
-      return 'mdi:swap-horizontal'
-    default:
-      return 'mdi:star'
-  }
-}
+// Commented out unused functions
+// function getStatusIcon(statusId: number): string {
+//   switch (statusId) {
+//     case 2: // Gift
+//       return 'mdi:gift'
+//     case 3: // Exchange
+//       return 'mdi:swap-horizontal'
+//     default:
+//       return 'mdi:star'
+//   }
+// }
 
-function getStatusColor(statusId: number): string {
-  switch (statusId) {
-    case 2: // Gift
-      return 'text-green-500'
-    case 3: // Exchange
-      return 'text-blue-500'
-    default:
-      return 'text-yellow-500'
-  }
-}
+// function getStatusColor(statusId: number): string {
+//   switch (statusId) {
+//     case 2: // Gift
+//       return 'text-green-500'
+//     case 3: // Exchange
+//       return 'text-blue-500'
+//     default:
+//       return 'text-yellow-500'
+//   }
+// }
 
 function close() {
   showModal.value = false

@@ -142,7 +142,11 @@ type CancelExchangeResponse = ApiEnvelope<CancelExchangeData>
 let demoState = {
   ownedCards: [...demoData.ownedCards] as UserCard[],
   packsToOpen: [...demoData.packsToOpen] as PackToOpen[],
-  stickersToView: [...demoData.stickersToView] as StickerToView[],
+  stickersToView: demoData.stickersToView.map(s => ({
+    ...s,
+    nickNameGave: s.nickNameGave || '',
+    avatarImage: s.avatarImage || ''
+  })) as StickerToView[],
   friends: [...demoData.friends] as Friend[],
   currentExchanges: [...demoData.currentExchanges] as CurrentExchange[]
 }
@@ -245,8 +249,11 @@ export const apiService = {
       
       // Decrease pack count
       const packIndex = demoState.packsToOpen.findIndex(p => p.packTypeId === packTypeId)
-      if (packIndex !== -1 && demoState.packsToOpen[packIndex].packs > 0) {
-        demoState.packsToOpen[packIndex].packs--
+      if (packIndex !== -1) {
+        const pack = demoState.packsToOpen[packIndex]
+        if (pack && pack.packs > 0) {
+          pack.packs--
+        }
       }
       
       return {
@@ -448,6 +455,14 @@ export const apiService = {
       const exchangeIndex = demoState.currentExchanges.findIndex(e => e.exchangeId === exchangeId)
       if (exchangeIndex !== -1) {
         const exchange = demoState.currentExchanges[exchangeIndex]
+        if (!exchange) {
+          return {
+            success: false,
+            errorCode: 404,
+            errorDescription: 'Exchange not found',
+            data: null
+          }
+        }
         
         // Add wanted cards to owned cards (simulate receiving cards)
         const wantedIdentifiers = exchange.stickersWanted.split(',').map(id => parseInt(id))
@@ -455,7 +470,7 @@ export const apiService = {
           const newCard: UserCard = {
             id: Date.now() + index,
             identifier: identifier.toString(),
-            resource: `https://puntosfutbol.com/album/cards/${identifier}.jpg`,
+            resource: `/cards/${identifier}.webp`,
             token: 1,
             type: 'normal',
             inAlbum: false,

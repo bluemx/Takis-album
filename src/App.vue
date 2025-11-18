@@ -31,7 +31,7 @@ import AlbumNavigation from './components/AlbumNavigation.vue'
 import AlbumTopbar from './components/AlbumTopbar.vue'
 import UserLoader from './components/UserLoader.vue'
 import WelcomeNewsModal from './components/WelcomeNewsModal.vue'
-import ExchangeMatchesModal from './components/ExchangeMatchesModal.vue'
+// import ExchangeMatchesModal from './components/ExchangeMatchesModal.vue'
 import mainbg from '../public/mainbg.webp'
 
 // State

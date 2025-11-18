@@ -1,7 +1,7 @@
 <template>
-    <div class="page relative innerpage card p-0 overflow-hidden bg-pfblue" >
+    <div class="page relative innerpage card p-0 overflow-hidden bg-purple-900" >
         <div class="page-content flex flex-col h-full relative ">
-            <div class="absolute inset-0  z-0 bg-linear-to-b from-blue-900 to-black/0" ></div>
+            <div class="absolute inset-0  z-0 bg-linear-to-b from-purple-900 to-black/0" ></div>
             <div class="absolute inset-0  opacity-50 mix-blend-multiply" :style="bgStyle(getPageImageUrl())"></div>
 
 
@@ -9,7 +9,7 @@
             <h2 
                 v-if="categoryName" 
                 class="text-3xl font-black text-white py-3 px-6 mx-auto mt-1 z-10 rounded-lg uppercase tracking-wider"
-                style="text-shadow: 3px 3px 0px #1e40af;">
+                style="text-shadow: 3px 3px 0px #0255A3;">
                 {{ categoryName }}
             </h2>
             

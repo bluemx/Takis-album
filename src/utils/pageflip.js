@@ -5,7 +5,7 @@ import { PageFlip } from '../utils/page-flip.module.js';
 export async function startFlip(thebookRef, onFlip) {
 
     const pageFlip = new PageFlip(thebookRef.value, {
-        width: 1024, // base page width
+        width: 980, // base page width
         height: 1200, // base page height
         size: 'stretch',
         maxWidth:  1024,

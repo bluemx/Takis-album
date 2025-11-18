@@ -10,9 +10,9 @@
             </div>
         </div>
 
-        <div class="page page-cover page-cover-top relative bg-pfblue" >
-            <div class="page-content h-full bg-pfblue flex flex-col justify-evenly items-center card rounded-r-none"  >
-                <div class="absolute inset-0  z-0 bg-linear-to-b from-blue-900 to-black/0" ></div>
+        <div class="page page-cover page-cover-top relative bg-purple-900" >
+            <div class="page-content h-full bg-purple-900 flex flex-col justify-evenly items-center card rounded-r-none"  >
+                <div class="absolute inset-0  z-0 bg-linear-to-b from-purple-900 to-black/0" ></div>
                 <div class="absolute inset-0  opacity-50 mix-blend-multiply" :style="bgStyle(coverBackImage)"></div>
 
                 <div class="max-w-md mx-auto card bg-white/20 backdrop-blur-xl px-8 relative z-10">

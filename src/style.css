@@ -5,7 +5,7 @@
 /* Custom Colors & Fonts */
 @theme {
   --color-pfblue: #0a1e3f;
-  --font-family-sans: "Fira Sans Condensed", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans: "Teko", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
 
@@ -60,7 +60,7 @@
   --sidebar-accent-foreground: oklch(0.3211 0 0);
   --sidebar-border: oklch(0.9537 0.0371 321.7948);
   --sidebar-ring: oklch(0.8703 0.0661 288.7640);
-  --font-sans: Inter, ui-sans-serif, sans-serif, system-ui;
+  --font-sans: Teko, ui-sans-serif, sans-serif, system-ui;
   --font-serif: Lora, serif;
   --font-mono: Fira Code, monospace;
   --radius: 0.4rem;
