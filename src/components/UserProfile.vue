@@ -4,7 +4,7 @@
         <div class="card rounded-full aspect-square p-0 h-fit w-fit mx-auto flex justify-center items-center max-w-32 lg:max-w-60">
             <img class="size-32 lg:size-60 aspect-square  shrink-0 object-cover rounded-full  mx-auto" alt="@hunvreus" :src="userStore.avatar">
         </div>
-        <div class="card py-2 px-5 mt-2 text-white w-full bg-white/20 backdrop-blur-xl text-shadow-lg">
+        <div class="card py-2 px-5 mt-2 text-white w-full text-center bg-white/20 backdrop-blur-xl text-shadow-lg">
             <strong>{{ userStore.name }}</strong>
         </div>
     </div>
