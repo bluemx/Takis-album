@@ -2,7 +2,7 @@
     <div class=" w-10/12 mx-auto card bg-white/20 backdrop-blur-xl text-center gap-2 p-2">
 
     <!-- Category Progress -->
-      <h3 class="text-sm lg:text-xl py-2  text-white">Tienes <span class="font-semibold text-blue-200 text-shadow-lg">{{ userStore.totalOwnedCards }} estampas </span> en tu álbum</h3>
+      <h3 class="text-sm lg:text-xl py-2  text-white">Tienes <span class="font-semibold text-blue-200 text-shadow-lg">{{ userStore.totalOwnedCards }} estampas de {{ cardsDatabase.length }} </span> en tu álbum</h3>
       <div class="flex flex-wrap justify-center items-center gap-1 grow shrink">
         <div 
           v-for="category in categoryProgress" 

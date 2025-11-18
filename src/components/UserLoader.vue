@@ -26,7 +26,7 @@
       <img src="/logow-anim.svg" class="w-40 mx-auto" />
       
       <div class="bg-white/10 rounded-lg p-6 mb-6 backdrop-blur-sm mt-10">
-        <div class="text-sm text-blue-200">Cuentas con {{ userStore.totalOwnedCards }} estampas</div>
+        <div class="text-xl text-blue-200">Cuentas con {{ userStore.totalOwnedCards }} de {{ cardsDatabase.length }} estampas</div>
       </div>
 
       <button
@@ -55,6 +55,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
 import { useUserStore } from '../stores/user'
+import { cardsDatabase } from '../data/cards'
 
 const emit = defineEmits<{
   ready: []

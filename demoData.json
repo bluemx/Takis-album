@@ -24,9 +24,9 @@
     {
       "id": 1001,
       "identifier": "1",
-      "resource": "/cards/1.webp",
+      "resource": "/cards/1.mp4",
       "token": 1,
-      "type": "normal",
+      "type": "animated",
       "inAlbum": true,
       "acRegId": 1
     },
@@ -132,9 +132,9 @@
     {
       "id": 1013,
       "identifier": "45",
-      "resource": "/cards/45.webp",
+      "resource": "/cards/45.mp4",
       "token": 1,
-      "type": "normal",
+      "type": "animated",
       "inAlbum": true,
       "acRegId": 45
     },
@@ -414,7 +414,7 @@
       {
         "id": 2005,
         "identifier": "145",
-        "resource": "/cards/145.webp",
+        "resource": "/cards/145.mp4",
         "token": 1,
         "type": "normal",
         "inAlbum": false,

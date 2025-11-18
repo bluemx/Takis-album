@@ -211,7 +211,7 @@
               @click="goToRepetidas"
               class="btn btn-primary">
               <Icon icon="mdi:cards-outline" class="w-4 h-4 mr-2" />
-              Ver todos mis stickers
+              Ver todas mis estampas
             </button>
             <button 
               v-if="userStore.totalPacks > 0"

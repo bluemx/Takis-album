@@ -6,6 +6,7 @@
         </button>
         
         <div class="flex flex-wrap md:flex-nowrap gap-2 md:ml-auto justify-center md:justify-end">
+          <!--
           <a 
             href="#" 
             target="_blank"
@@ -14,6 +15,7 @@
             <Icon icon="mdi:cash" class="w-4 h-4" />
             <span >Comprar sobres</span>
           </a>
+          -->
           <FriendsWidget />
           <!--
             <ExchangeWidget />

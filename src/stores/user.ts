@@ -170,9 +170,11 @@ export const useUserStore = defineStore('user', () => {
         throw new Error(response.errorDescription || 'Failed to open pack')
       }
       
-      // Add new cards to ownedCards
+      // Add newly opened cards to ownedCards
       const newCards = response.data.userCards || []
-      ownedCards.value.push(...newCards)
+      if (newCards.length > 0) {
+        ownedCards.value.push(...newCards)
+      }
       
       // Decrease pack count for the specific pack type
       const packToUpdate = packsToOpen.value.find(p => p.packTypeId === packTypeId)

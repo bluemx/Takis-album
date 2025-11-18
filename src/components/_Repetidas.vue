@@ -10,7 +10,7 @@
       
       <!-- Header -->
       <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold text-pfblue">Mis stickers</h2>
+        <h2 class="text-2xl font-bold text-pfblue">Mis estampas</h2>
         <button 
           @click="close"
           class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 rounded-full hover:bg-gray-100">

@@ -5,7 +5,7 @@
       @click="showModal = true"
       class="btn  w-full">
       <Icon icon="mdi:cards-outline" class="w-4 h-4 mr-2" />
-      Mis stickers ({{ extraCardsCount }})
+      Mis estampas ({{ extraCardsCount }})
     </button>
 
     <!-- Modal -->
@@ -21,7 +21,7 @@
         <!-- Header -->
         <div class="flex justify-between items-center mb-6">
           <div>
-            <h2 class="text-2xl font-bold text-pfblue">Mis stickers</h2>
+            <h2 class="text-2xl font-bold text-pfblue">Mis estampas</h2>
             <p v-if="hasNewCards" class="text-sm text-orange-600 font-medium flex items-center">
               <Icon icon="mdi:star" class="w-4 h-4 mr-1" />
               ¡Tienes nuevas estampas!

@@ -234,17 +234,33 @@ export const apiService = {
       console.log('🎮 DEMO MODE: openPack called', { packTypeId })
       await simulateDelay(800)
       
-      // Get pack results based on pack type
-      const packResults = packTypeId === 2 
-        ? demoData.packOpenResults.golden 
-        : demoData.packOpenResults.normal
+      // For demo mode, randomly select 5 cards from user's owned cards
+      // Get unique card identifiers from owned cards
+      const uniqueIdentifiers = [...new Set(demoState.ownedCards.map(c => c.identifier))]
       
-      // Add new cards to owned cards with unique IDs
-      const newCards = packResults.map((card, index) => ({
-        ...card,
-        id: Date.now() + index // Generate unique ID
-      }))
+      // Randomly select 5 identifiers (can repeat)
+      const selectedIdentifiers: string[] = []
+      for (let i = 0; i < 5; i++) {
+        const randomIndex = Math.floor(Math.random() * uniqueIdentifiers.length)
+        selectedIdentifiers.push(uniqueIdentifiers[randomIndex])
+      }
       
+      // Create new cards from selected identifiers
+      const newCards = selectedIdentifiers.map((identifier, index) => {
+        // Find the original card to get its properties
+        const originalCard = demoState.ownedCards.find(c => c.identifier === identifier)
+        return {
+          id: Date.now() + index, // Generate unique ID
+          identifier: identifier,
+          resource: `/cards/${identifier}.webp`,
+          token: 1,
+          type: originalCard?.type || 'normal',
+          inAlbum: false, // New cards start as not in album
+          acRegId: parseInt(identifier)
+        }
+      })
+      
+      // Add new cards to the state
       demoState.ownedCards = [...demoState.ownedCards, ...newCards]
       
       // Decrease pack count
@@ -266,7 +282,7 @@ export const apiService = {
           name: demoData.user.name,
           email: demoData.user.email,
           packsToOpen: demoState.packsToOpen,
-          userCards: demoState.ownedCards,
+          userCards: newCards, // Only return the newly opened cards
           stickersToView: demoState.stickersToView
         }
       }
