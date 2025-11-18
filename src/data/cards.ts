@@ -1,0 +1,98 @@
+export interface Card {
+  acRegId: number;
+  identifier: number;
+  category: number;
+  desc: string;
+  disposition?: string;
+  metal?: number | null;
+  anim?: number | null;
+  has3d?: boolean | string | null;
+}
+
+export const cardsDatabase: Card[] = 
+[
+{"acRegId":1,"identifier":1,"category":0,"disposition":"Vertical","desc":"México","metal":null,"anim":0,"has3d":null},
+{"acRegId":2,"identifier":2,"category":0,"disposition":"Vertical","desc":"Canadá","metal":null,"anim":0,"has3d":null},
+{"acRegId":3,"identifier":3,"category":0,"disposition":"Vertical","desc":"Estados Unidos","metal":null,"anim":0,"has3d":null},
+{"acRegId":4,"identifier":4,"category":0,"disposition":"Vertical","desc":"Japón","metal":null,"anim":0,"has3d":null},
+{"acRegId":5,"identifier":5,"category":0,"disposition":"Vertical","desc":"España","metal":null,"anim":0,"has3d":null},
+{"acRegId":6,"identifier":6,"category":0,"disposition":"Vertical","desc":"Francia","metal":null,"anim":0,"has3d":null},
+{"acRegId":7,"identifier":7,"category":0,"disposition":"Vertical","desc":"Argentina","metal":null,"anim":0,"has3d":null},
+{"acRegId":8,"identifier":8,"category":0,"disposition":"Vertical","desc":"Brasil","metal":null,"anim":0,"has3d":null},
+{"acRegId":9,"identifier":9,"category":0,"disposition":"Vertical","desc":"Inglaterra","metal":null,"anim":0,"has3d":null},
+{"acRegId":10,"identifier":10,"category":0,"disposition":"Vertical","desc":"Uzbekistán","metal":null,"anim":0,"has3d":null},
+{"acRegId":11,"identifier":11,"category":0,"disposition":"Vertical","desc":"Alemania","metal":null,"anim":0,"has3d":null},
+{"acRegId":12,"identifier":12,"category":0,"disposition":"Vertical","desc":"Colombia","metal":null,"anim":0,"has3d":null},
+{"acRegId":13,"identifier":13,"category":0,"disposition":"Vertical","desc":"Italia","metal":null,"anim":0,"has3d":null},
+{"acRegId":14,"identifier":14,"category":0,"disposition":"Vertical","desc":"Portugal","metal":null,"anim":0,"has3d":null},
+{"acRegId":15,"identifier":15,"category":0,"disposition":"Vertical","desc":"Países Bajos","metal":null,"anim":0,"has3d":null},
+{"acRegId":16,"identifier":16,"category":0,"disposition":"Vertical","desc":"Corea del Sur","metal":null,"anim":0,"has3d":null},
+{"acRegId":17,"identifier":17,"category":0,"disposition":"Vertical","desc":"Australia","metal":null,"anim":0,"has3d":null},
+{"acRegId":18,"identifier":18,"category":0,"disposition":"Vertical","desc":"Egipto","metal":null,"anim":0,"has3d":null},
+{"acRegId":19,"identifier":19,"category":0,"disposition":"Vertical","desc":"Chile","metal":null,"anim":0,"has3d":null},
+{"acRegId":20,"identifier":20,"category":0,"disposition":"Vertical","desc":"Perú","metal":null,"anim":0,"has3d":null},
+{"acRegId":21,"identifier":21,"category":0,"disposition":"Vertical","desc":"Uruguay","metal":null,"anim":0,"has3d":null},
+{"acRegId":22,"identifier":22,"category":0,"disposition":"Vertical","desc":"Costa Rica","metal":null,"anim":0,"has3d":null},
+
+{"acRegId":23,"identifier":23,"category":1,"disposition":"Vertical","desc":"Parada de portero","metal":null,"anim":0,"has3d":null},
+{"acRegId":24,"identifier":24,"category":1,"disposition":"Vertical","desc":"Remate de cabeza","metal":null,"anim":0,"has3d":null},
+{"acRegId":25,"identifier":25,"category":1,"disposition":"Vertical","desc":"Saque de meta","metal":null,"anim":0,"has3d":null},
+{"acRegId":26,"identifier":26,"category":1,"disposition":"Vertical","desc":"Tiro a gol","metal":null,"anim":0,"has3d":null},
+{"acRegId":27,"identifier":27,"category":1,"disposition":"Vertical","desc":"Regate","metal":null,"anim":0,"has3d":null},
+{"acRegId":28,"identifier":28,"category":1,"disposition":"Vertical","desc":"Barrida","metal":null,"anim":0,"has3d":null},
+{"acRegId":29,"identifier":29,"category":1,"disposition":"Vertical","desc":"Despeje","metal":null,"anim":0,"has3d":null},
+{"acRegId":30,"identifier":30,"category":1,"disposition":"Vertical","desc":"Tiro libre","metal":null,"anim":0,"has3d":null},
+{"acRegId":31,"identifier":31,"category":1,"disposition":"Vertical","desc":"Falta","metal":null,"anim":0,"has3d":null},
+{"acRegId":32,"identifier":32,"category":1,"disposition":"Vertical","desc":"Penalti","metal":null,"anim":0,"has3d":null},
+{"acRegId":33,"identifier":33,"category":1,"disposition":"Vertical","desc":"Contraataque","metal":null,"anim":0,"has3d":null},
+{"acRegId":34,"identifier":34,"category":1,"disposition":"Vertical","desc":"Tiro de esquina","metal":null,"anim":0,"has3d":null},
+{"acRegId":35,"identifier":35,"category":1,"disposition":"Vertical","desc":"Saque de banda","metal":null,"anim":0,"has3d":null},
+{"acRegId":36,"identifier":36,"category":1,"disposition":"Vertical","desc":"Pared","metal":null,"anim":0,"has3d":null},
+{"acRegId":37,"identifier":37,"category":1,"disposition":"Vertical","desc":"Centro al área","metal":null,"anim":0,"has3d":null},
+{"acRegId":38,"identifier":38,"category":1,"disposition":"Vertical","desc":"Cambio de juego","metal":null,"anim":0,"has3d":null},
+{"acRegId":39,"identifier":39,"category":1,"disposition":"Vertical","desc":"Túnel","metal":null,"anim":0,"has3d":null},
+{"acRegId":40,"identifier":40,"category":1,"disposition":"Vertical","desc":"Volea","metal":null,"anim":0,"has3d":null},
+{"acRegId":41,"identifier":41,"category":1,"disposition":"Vertical","desc":"Autogol","metal":null,"anim":0,"has3d":null},
+{"acRegId":42,"identifier":42,"category":1,"disposition":"Vertical","desc":"Celebración de gol","metal":null,"anim":0,"has3d":null},
+
+{"acRegId":43,"identifier":43,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":44,"identifier":44,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":45,"identifier":45,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":46,"identifier":46,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":47,"identifier":47,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":48,"identifier":48,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":49,"identifier":49,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":50,"identifier":50,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":51,"identifier":51,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":52,"identifier":52,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":53,"identifier":53,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":54,"identifier":54,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":55,"identifier":55,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":56,"identifier":56,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":57,"identifier":57,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":58,"identifier":58,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":59,"identifier":59,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":60,"identifier":60,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+{"acRegId":61,"identifier":61,"category":2,"disposition":"Vertical","desc":"Fans de Takis","metal":null,"anim":0,"has3d":null},
+
+{"acRegId":62,"identifier":62,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":63,"identifier":63,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":64,"identifier":64,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":65,"identifier":65,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":66,"identifier":66,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":67,"identifier":67,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":68,"identifier":68,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":69,"identifier":69,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":70,"identifier":70,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":71,"identifier":71,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":72,"identifier":72,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":73,"identifier":73,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":74,"identifier":74,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":75,"identifier":75,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":76,"identifier":76,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":77,"identifier":77,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":78,"identifier":78,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":79,"identifier":79,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":80,"identifier":80,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null},
+{"acRegId":81,"identifier":81,"category":3,"disposition":"Vertical","desc":"Mural","metal":null,"anim":0,"has3d":null}
+];
