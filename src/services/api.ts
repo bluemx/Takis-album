@@ -242,7 +242,7 @@ export const apiService = {
       const selectedIdentifiers: string[] = []
       for (let i = 0; i < 5; i++) {
         const randomIndex = Math.floor(Math.random() * uniqueIdentifiers.length)
-        selectedIdentifiers.push(uniqueIdentifiers[randomIndex])
+        selectedIdentifiers.push(uniqueIdentifiers[randomIndex]!)
       }
       
       // Create new cards from selected identifiers
