@@ -460,7 +460,7 @@ export const apiService = {
             success: false,
             errorCode: 404,
             errorDescription: 'Exchange not found',
-            data: null
+            data: { message: 'Exchange not found' }
           }
         }
         
